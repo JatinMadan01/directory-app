@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Person Records</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tabs">
+        <button class="tab-button" onclick="showTab('add-new-person')">Add New Person</button>
+        <button class="tab-button" onclick="showTab('retrieve-information')">Retrieve Information</button>
+    </div>
+
+    <div id="add-new-person" class="tab-content">
+        <table id="person-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Date of Birth</th>
+                    <th>Aadhar Number</th>
+                    <th>Mobile Number</th>
+                    <th>Age</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="person-table-body">
+                <tr>
+                    <td><input type="text" class="name-input"></td>
+                    <td><input type="date" class="dob-input"></td>
+                    <td><input type="text" class="aadhar-input"></td>
+                    <td><input type="text" class="mobile-input"></td>
+                    <td class="age-input">-</td>
+                    <td>
+                        <button class="save-btn">Save</button>
+                        <button class="delete-btn">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button id="add-row-btn">Add New Row</button>
+    </div>
+
+    <div id="retrieve-information" class="tab-content" style="display:none;">
+        <!-- Retrieve Information content here -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
